@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const restController = require('../controllers/restController.js')
 const adminController = require('../controllers/adminController.js')
 const userController = require('../controllers/userController.js')
@@ -73,4 +74,10 @@ module.exports = (app, passport) => {
 
   app.post('/following/:userId', authenticated, userController.addFollowing)
   app.delete('/following/:userId', authenticated, userController.removeFollowing)
+=======
+module.exports = (app) => {
+  app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+>>>>>>> upstream/R01-test
 }
